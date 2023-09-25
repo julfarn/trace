@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AleaPackageDir Condition="$(AleaPackageDir) == '' Or $(AleaPackageDir) == '*Undefined*'">$(MSBuildThisFileDirectory)..\</AleaPackageDir>
+    <AleaResourceDir Condition="$(AleaResourceDir) == '' Or $(AleaResourceDir) == '*Undefined*'">$(OutputPath)</AleaResourceDir>
+    <AleaDoExtractCTResources Condition="$(AleaDoExtractCTResources) == '' Or $(AleaDoExtractCTResources) == '*Undefined*'">true</AleaDoExtractCTResources>
+  </PropertyGroup>
+  <UsingTask
+    TaskName="Alea.Build.ExtractCTResourcesTask"
+    AssemblyFile="$(AleaPackageDir)tools\Alea.Build.dll"/>
+  <Target AfterTargets="AfterBuild" Name="AleaExtractCTResources" Condition="$(AleaDoExtractCTResources) == 'true' Or $(AleaDoExtractCTResources) == 'True'">
+    <Alea.Build.ExtractCTResourcesTask
+      ResourceAssemblyDir="$(AleaPackageDir)tools\"
+      ResourceDir="$(AleaResourceDir)" />
+  </Target>
+  <Target AfterTargets="AfterClean" Name="AleaCUDACleanCTResources">
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.LibDevice"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.ARM.B32.Linux"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.X86.B32.MacOSX"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.X86.B32.Windows"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.X86.B64.Linux"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.X86.B64.MacOSX"/>
+    <RemoveDir Directories="$(AleaResourceDir)\Alea.CUDA.CT.Native.X86.B64.Windows"/>
+  </Target>
+</Project>

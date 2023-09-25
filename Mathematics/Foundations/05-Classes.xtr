@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="0">
+  <backend>
+    <references count="3">
+      <ref id="0">01-BinConDefns.xtr</ref>
+      <ref id="1">03-Quantifiers.xtr</ref>
+      <ref id="2">04a-Pairs.xtr</ref>
+    </references>
+    <id-manager>
+      <max-id type="context" value="1" />
+      <max-id type="theorem" value="0" />
+      <max-id type="definition" value="11" />
+      <max-id type="deduction" value="0" />
+      <max-id type="deductionstep" value="0" />
+      <max-id type="contextstatement" value="3" />
+      <max-id type="theoremstatement" value="0" />
+      <max-id type="definitionstatement" value="9" />
+      <max-id type="deductionstepstatement" value="0" />
+      <max-id type="variable" value="19" />
+    </id-manager>
+    <contexts count="1">
+      <context id="2.0.1">
+        <supercontexts count="0" />
+        <variables count="19">
+          <variable id="B.0.1.1">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.2">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.3">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.4">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.5">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.6">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.7">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.8">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.9">
+            <symbol>A</symbol>
+          </variable>
+          <variable id="B.0.1.A">
+            <symbol>B</symbol>
+          </variable>
+          <variable id="B.0.1.B">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.C">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.D">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.E">
+            <symbol>B</symbol>
+          </variable>
+          <variable id="B.0.1.F">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.10">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.11">
+            <symbol>z</symbol>
+          </variable>
+          <variable id="B.0.1.12">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.13">
+            <symbol>y</symbol>
+          </variable>
+        </variables>
+        <definitions count="11">
+          <definition type="4" id="3.0.1.1">
+            <quantifier type="2" termcount="1" boundvarcount="0" formulacount="0">Indiv</quantifier>
+            <axioms count="0" />
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">is an individual</sym>
+                <latex />
+                <brackets>0000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="1" id="3.0.1.2">
+            <functionsymbol argcount="0" boundvarcount="1" formulacount="1">Class</functionsymbol>
+            <axioms count="0" />
+            <visualizations count="1">
+              <visualization ovch="0" symbols="3">
+                <sym t="0" f="05">|</sym>
+                <sym t="1">{</sym>
+                <sym t="1">}</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="3" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                    <tree myind="4" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                      <tree myind="2" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                        <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                        <tree myind="1" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="1" id="3.0.1.9">
+            <functionsymbol argcount="0" boundvarcount="2" formulacount="1">Class</functionsymbol>
+            <axioms count="1">
+              <statement id="8.0.1.9.7">
+                <expression>00010001A02000203000202073.0.1.900020007B.0.1.F00020008B.0.1.10000207000000020007B.0.1.F00020008B.0.1.10000202073.0.1.200020008B.0.1.11000206073.2.1.200020008B.0.1.12000206073.2.1.200020008B.0.1.13010205073.1.1.300020300020008B.0.1.11000202073.3.1.100020008B.0.1.1200020008B.0.1.13000207000000020008B.0.1.1200020008B.0.1.13</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="6">
+                <sym t="0" f="05">|</sym>
+                <sym t="1">(</sym>
+                <sym t="1">)</sym>
+                <sym t="0" f="04">,</sym>
+                <sym t="1">{</sym>
+                <sym t="1">}</sym>
+                <latex />
+                <brackets>00000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="7" anchor="0" xOff="0" yOff="0,05" xGrow="False" yGrow="True" small="False" branches="1">
+                    <tree myind="8" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                      <tree myind="3" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                        <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                        <tree myind="4" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                          <tree myind="5" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                            <tree myind="6" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                              <tree myind="1" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                              <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                            </tree>
+                          </tree>
+                        </tree>
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.3">
+            <quantifier type="2" termcount="1" boundvarcount="0" formulacount="0">Class</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.3.1">
+                <expression>00010001A01000206073.0.1.3000202073.0.1.200020007B.0.1.1000207000000020007B.0.1.1</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">is a class</sym>
+                <latex />
+                <brackets>0000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.4">
+            <quantifier type="2" termcount="0" boundvarcount="1" formulacount="1">ForAll</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.4.2">
+                <expression>00010001A01000205073.1.1.1000106073.0.1.400020007B.0.1.1000207000000020007B.0.1.1000106073.2.1.100020007B.0.1.2000105073.1.1.2000206073.0.1.100020007B.0.1.2000207000000020007B.0.1.2</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="2">
+                <sym t="1">forall</sym>
+                <sym t="0" f="05">ind</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="1" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="2" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                        <tree myind="3" anchor="1" xOff="0" yOff="-0,04" xGrow="False" yGrow="False" small="True" branches="0" />
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.5">
+            <quantifier type="2" termcount="0" boundvarcount="1" formulacount="1">Exists</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.5.3">
+                <expression>00010001A01000205073.1.1.1000106073.0.1.500020007B.0.1.3000207000000020007B.0.1.3000106073.2.1.200020007B.0.1.4010105073.1.1.3000206073.0.1.100020007B.0.1.4000207000000020007B.0.1.4</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="2">
+                <sym t="1">thereexists</sym>
+                <sym t="0" f="05">ind</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="1" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="2" anchor="2" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                        <tree myind="3" anchor="1" xOff="-0,01" yOff="-0,02" xGrow="False" yGrow="False" small="True" branches="0" />
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.A">
+            <quantifier type="2" termcount="0" boundvarcount="1" formulacount="1">ForAll</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.A.8">
+                <expression>00010001A01000205073.1.1.1000206073.0.1.A00020007B.0.1.1000207000000020007B.0.1.1010105073.1.1.3000206073.0.1.500020007B.0.1.3000207000000020007B.0.1.3000206073.0.1.400020007B.0.1.6000206073.0.1.400020008B.0.1.11000105073.1.1.2000205073.1.1.3000207000000020007B.0.1.6000207000000020008B.0.1.1100020300020007B.0.1.600020008B.0.1.11</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="3">
+                <sym t="1">thereexists</sym>
+                <sym t="0" f="05">!</sym>
+                <sym t="0" f="05">ind</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="1" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="2" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                        <tree myind="3" anchor="0" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                        <tree myind="4" anchor="1" xOff="0,01" yOff="-0,02" xGrow="False" yGrow="False" small="True" branches="0" />
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.6">
+            <quantifier type="2" termcount="2" boundvarcount="0" formulacount="0">elem</quantifier>
+            <axioms count="0" />
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">element</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="1" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.7">
+            <quantifier type="2" termcount="2" boundvarcount="0" formulacount="0">notElem</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.7.4">
+                <expression>0000000205073.1.1.1000106073.0.1.600020007B.0.1.500020007B.0.1.6000104000206073.0.1.700020007B.0.1.500020007B.0.1.6</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">notelement</sym>
+                <latex />
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="1" id="3.0.1.B">
+            <functionsymbol argcount="1" boundvarcount="1" formulacount="1">f</functionsymbol>
+            <axioms count="1">
+              <statement id="8.0.1.B.9">
+                <expression>00010001P01000203000202073.0.1.B00020007B.0.1.900020007B.0.1.1000207000000020007B.0.1.1000202073.0.1.200020007B.0.1.2000205073.1.1.3000206073.0.1.600020007B.0.1.200020007B.0.1.9000207000000020007B.0.1.2</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="4">
+                <sym t="1">{</sym>
+                <sym t="1">}</sym>
+                <sym t="0" f="05">|</sym>
+                <sym t="1">element</sym>
+                <latex />
+                <brackets>00000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="3" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                    <tree myind="4" anchor="0" xOff="0,01" yOff="0" xGrow="False" yGrow="True" small="False" branches="1">
+                      <tree myind="5" anchor="2" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                        <tree myind="6" anchor="2" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                          <tree myind="0" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                          <tree myind="2" anchor="2" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                        </tree>
+                        <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="1" id="3.0.1.8">
+            <functionsymbol argcount="0" boundvarcount="0" formulacount="0">emptyset</functionsymbol>
+            <axioms count="2">
+              <statement id="8.0.1.8.5">
+                <expression>0000000203000202073.0.1.8000202073.0.1.200020007B.0.1.1000201F</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+              <statement id="8.0.1.8.6">
+                <expression>0000000206073.0.1.1000202073.0.1.8</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">emptyset</sym>
+                <latex />
+                <brackets>00</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+        </definitions>
+        <axioms count="3">
+          <statement id="7.0.1.1">
+            <expression>00010001A01000206073.0.1.400020007B.0.1.7000105073.1.1.1000206073.0.1.600020007B.0.1.7000202073.0.1.200020007B.0.1.8000207000000020007B.0.1.8000207000000020007B.0.1.7</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+          <statement id="7.0.1.2">
+            <expression>0000000205073.1.1.2000105073.1.1.3000206073.0.1.300020007B.0.1.9000206073.0.1.300020007B.0.1.A000105073.1.1.100020300020007B.0.1.900020007B.0.1.A000206073.0.1.400020007B.0.1.B000105073.1.1.1000206073.0.1.600020007B.0.1.B00020007B.0.1.9000206073.0.1.600020007B.0.1.B00020007B.0.1.A</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+          <statement id="7.0.1.3">
+            <expression>00010001A01000205073.1.1.1000106073.0.1.6000202073.0.1.200020007B.0.1.C000207000000020007B.0.1.C00020007B.0.1.E000206073.0.1.500020007B.0.1.D010105073.1.1.300020300020007B.0.1.D000202073.0.1.200020007B.0.1.C000207000000020007B.0.1.C000206073.0.1.600020007B.0.1.D00020007B.0.1.E</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+        </axioms>
+        <theorems count="0" />
+      </context>
+    </contexts>
+  </backend>
+  <structure>
+    <struct hidden="False" collapsed="False" type="0" id="1.0" children="1">
+      <struct hidden="False" collapsed="False" type="0" id="2.0.1" children="14">
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.1" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.1" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.1" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.2" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.2" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.2" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.9" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.9" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.9" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.9.7" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.3" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.3" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.3" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.3.1" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.4" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.4" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.4" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.4.2" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.5" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.5" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.5" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.5.3" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.A" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.A" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.A" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.A.8" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.6" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.6" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.6" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.7" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.7" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.7" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.7.4" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.B" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.B" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.B" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.B.9" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.8" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.8" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.8" children="2">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.8.5" children="0" />
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.8.6" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.1" children="0" />
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.2" children="0" />
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.3" children="0" />
+      </struct>
+    </struct>
+  </structure>
+</document>

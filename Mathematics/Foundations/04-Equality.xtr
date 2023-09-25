@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="0">
+  <backend>
+    <references count="1">
+      <ref id="0">01-BinConDefns.xtr</ref>
+    </references>
+    <id-manager>
+      <max-id type="context" value="1" />
+      <max-id type="theorem" value="0" />
+      <max-id type="definition" value="0" />
+      <max-id type="deduction" value="0" />
+      <max-id type="deductionstep" value="0" />
+      <max-id type="contextstatement" value="3" />
+      <max-id type="theoremstatement" value="0" />
+      <max-id type="definitionstatement" value="0" />
+      <max-id type="deductionstepstatement" value="0" />
+      <max-id type="variable" value="6" />
+    </id-manager>
+    <contexts count="1">
+      <context id="2.0.1">
+        <supercontexts count="0" />
+        <variables count="6">
+          <variable id="B.0.1.1">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.2">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.3">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.4">
+            <symbol>x</symbol>
+          </variable>
+          <variable id="B.0.1.5">
+            <symbol>y</symbol>
+          </variable>
+          <variable id="B.0.1.6">
+            <symbol>z</symbol>
+          </variable>
+        </variables>
+        <definitions count="0" />
+        <axioms count="3">
+          <statement id="7.0.1.1">
+            <expression>000000020300020007B.0.1.100020007B.0.1.1</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+          <statement id="7.0.1.2">
+            <expression>0000000205073.1.1.100020300020007B.0.1.200020007B.0.1.300020300020007B.0.1.300020007B.0.1.2</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+          <statement id="7.0.1.3">
+            <expression>0000000205073.1.1.2010105073.1.1.300020300020007B.0.1.400020007B.0.1.500020300020007B.0.1.500020007B.0.1.600020300020007B.0.1.400020007B.0.1.6</expression>
+            <val v="True" a="True" c="0" />
+            <restrictedvars count="0" />
+          </statement>
+        </axioms>
+        <theorems count="0" />
+      </context>
+    </contexts>
+  </backend>
+  <structure>
+    <struct hidden="False" collapsed="False" type="0" id="1.0" children="1">
+      <struct hidden="False" collapsed="False" type="0" id="2.0.1" children="3">
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.1" children="0" />
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.2" children="0" />
+        <struct hidden="False" collapsed="False" type="0" id="7.0.1.3" children="0" />
+      </struct>
+    </struct>
+  </structure>
+</document>

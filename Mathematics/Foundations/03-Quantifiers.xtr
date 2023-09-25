@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="0">
+  <backend>
+    <references count="1">
+      <ref id="0">01-BinConDefns.xtr</ref>
+    </references>
+    <id-manager>
+      <max-id type="context" value="1" />
+      <max-id type="theorem" value="0" />
+      <max-id type="definition" value="2" />
+      <max-id type="deduction" value="0" />
+      <max-id type="deductionstep" value="0" />
+      <max-id type="contextstatement" value="0" />
+      <max-id type="theoremstatement" value="0" />
+      <max-id type="definitionstatement" value="1" />
+      <max-id type="deductionstepstatement" value="0" />
+      <max-id type="variable" value="1" />
+    </id-manager>
+    <contexts count="1">
+      <context id="2.0.1">
+        <supercontexts count="0" />
+        <variables count="1">
+          <variable id="B.0.1.1">
+            <symbol>x</symbol>
+          </variable>
+        </variables>
+        <definitions count="2">
+          <definition type="4" id="3.0.1.1">
+            <quantifier type="0" termcount="0" boundvarcount="1" formulacount="1">ForAll</quantifier>
+            <axioms count="0" />
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">forall</sym>
+                <latex>\forall %1% : %0%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="1" anchor="2" xOff="-0,05" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.2">
+            <quantifier type="1" termcount="0" boundvarcount="1" formulacount="1">Exists</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.2.1">
+                <expression>00010001A01000205073.1.1.2000204000106073.0.1.200020007B.0.1.1000104000207000000020007B.0.1.1000206073.0.1.100020007B.0.1.1000207000000020007B.0.1.1</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">thereexists</sym>
+                <latex>\exists %1% : %0%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="1" anchor="2" xOff="-0,04" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+        </definitions>
+        <axioms count="0" />
+        <theorems count="0" />
+      </context>
+    </contexts>
+  </backend>
+  <structure>
+    <struct hidden="False" collapsed="False" type="0" id="1.0" children="1">
+      <struct hidden="False" collapsed="False" type="0" id="2.0.1" children="2">
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.1" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.1" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.1" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.2" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.2" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.2" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.2.1" children="0" />
+          </struct>
+        </struct>
+      </struct>
+    </struct>
+  </structure>
+</document>

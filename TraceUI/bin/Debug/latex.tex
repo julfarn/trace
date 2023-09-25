@@ -1,0 +1,86 @@
+\documentclass{article}
+            \usepackage{amsthm}
+
+            \newtheorem{definition}{Definition}
+            \newtheorem{theorem}{Theorem}
+            \newtheorem{axiom}{Axiom}
+
+
+            \begin{document}
+
+            \title{Reductio5}
+            \maketitle
+            
+
+\begin{axiom}
+\begin{equation}
+{{{{\left( {{x} = {y}} \; \mathrm{ and } \; {{y} = {z}}\right)} \Longrightarrow {{x} = {z}}}}}
+\end{equation}
+\end{axiom}
+
+\begin{axiom}
+\begin{equation}
+{1} = {a}
+\end{equation}
+\end{axiom}
+
+\begin{axiom}
+\begin{equation}
+\neg {\left( {1} = {2}\right)}
+\end{equation}
+\end{axiom}
+
+\begin{theorem}
+\begin{equation}
+\neg {{a} = {2}}
+\end{equation}
+
+\begin{proof}
+We will assume the contrary:
+
+\begin{equation}
+{a} = {2}
+\end{equation}
+
+Next, we use the transitivity of equality.
+
+\begin{equation}
+\forall {y} : {\left( \forall {z} : {\left( {{{1} = {y}} \; \mathrm{ and } \; {{y} = {z}}} \Longrightarrow {{1} = {z}}\right)}\right)}
+\end{equation}
+
+\begin{equation}
+\forall {z} : {\left( {{{1} = {a}} \; \mathrm{ and } \; {{a} = {z}}} \Longrightarrow {{1} = {z}}\right)}
+\end{equation}
+
+\begin{equation}
+{{{1} = {a}} \; \mathrm{ and } \; {{a} = {2}}} \Longrightarrow {{1} = {2}}
+\end{equation}
+
+Using the axiom  a = 1 as well as our initial assumtion, this reduces to:
+
+\begin{equation}
+{1} = {2}
+\end{equation}
+
+Obvoiously, a statement and its negation cannot both hold true.
+
+\begin{equation}
+{{{1} = {2}} \; \mathrm{ and } \; {\neg {{1} = {2}}}} \Longrightarrow {\mathrm{False}}
+\end{equation}
+
+However, we just deduced the former equality, and we presupposed the latter. This leads to a contradiction.
+
+\begin{equation}
+\mathrm{False}
+\end{equation}
+
+This means our assumption must have been wrong.
+
+\begin{equation}
+\neg {{a} = {2}}
+\end{equation}
+
+\end{proof}
+\end{theorem}
+
+\end{document}

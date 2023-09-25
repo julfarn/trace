@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TraceUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HoverHighlight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">BurlyWood</Value>
+    </Setting>
+    <Setting Name="SymbolHoverHighlight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">SaddleBrown</Value>
+    </Setting>
+    <Setting Name="TheoremFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 12.75pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="ProofFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 12pt, style=Italic</Value>
+    </Setting>
+    <Setting Name="StepFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 12pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="LabelFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 11.25pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="LinkHoverHighlight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">0, 192, 192</Value>
+    </Setting>
+    <Setting Name="VarWithAx" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="VarThisAx" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">192, 0, 0</Value>
+    </Setting>
+    <Setting Name="VarNoAx" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Navy</Value>
+    </Setting>
+    <Setting Name="BoundVar" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">20, 67, 21</Value>
+    </Setting>
+    <Setting Name="AIPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F:\TraceAI</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

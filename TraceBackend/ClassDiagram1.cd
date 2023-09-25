@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TraceBackend.FileIDManager" Collapsed="true">
+    <Position X="46.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiEgACAEIgAQEAAgAAACFDAQgAACJBADAgFIBgAACAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MContext" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAEAAAmICQQQANAEAgAICABAAEJCAGBgRUIABFQIA=</HashCode>
+      <FileName>IO_Classes\IO_MContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MStatement" Collapsed="true">
+    <Position X="32.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAgAAEMAAAABQFAAAAAgACQAAFIAAIAgBAAAAAAAQ=</HashCode>
+      <FileName>IO_Classes\IO_MContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDefinition" Collapsed="true">
+    <Position X="44" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAsAAABRANAAAAAEAAAAAAICAAAgBEAAQAAAM=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MLogicConnective" Collapsed="true">
+    <Position X="41" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MFunctionSymbol" Collapsed="true">
+    <Position X="39.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAEAAAAAEAAAAAAIAAAAABAAAAIAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MPredicate" Collapsed="true">
+    <Position X="42" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAEAAAAAEAAAAAAIAAAAABAAAAIAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MBinaryConnective" Collapsed="true">
+    <Position X="44.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIIAAEAAAAAAEAAAAAEAAAgAAIAAAAABAAAAAAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MQuantifier" Collapsed="true">
+    <Position X="46.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAEAAAAAEAAAAABIAAAAABAAAAAAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MNegationDefinition" Collapsed="true">
+    <Position X="35.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAABEAAAAAEAAAAAAIAAAAABAAAAAAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MEqualityDefinition" Collapsed="true">
+    <Position X="37.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAABEAAAAAEAAAAAAIAAAAABAAAAAAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MClassDefinition" Collapsed="true">
+    <Position X="37.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAEAAAAAEAAAAAAIAAAAABAAAAAAAI=</HashCode>
+      <FileName>IO_Classes\IO_MDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDocument" Collapsed="true">
+    <Position X="46.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEEBABAAFAMAIAAEAEAAAAAAAAAQAEAEAiBAAADAAAg=</HashCode>
+      <FileName>IO_Classes\IO_MDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MFormula" Collapsed="true">
+    <Position X="15.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAAAAAAAAABAAAAAAAgAAAACAIAAAAADAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MUndefinedPredicate" Collapsed="true">
+    <Position X="68.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAIAAM=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MUndefinedPredicateFormula" Collapsed="true">
+    <Position X="20" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAABAEAAAAAgAAAgAAIAAIgABAQgAABAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MObsoleteUndefinedFormula" Collapsed="true">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAIAAAgAAAgAAIAEAgABAQAAAAAE=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MTrivialFormula" Collapsed="true">
+    <Position X="24.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAAAAAABAABAEAAAAAgAAAgAAIAAIAABAAgAgAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MPredicateFormula" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAgAAAgAAIAAAgABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MEqualityFormula" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAgAAAgAAIAAAgABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MNegationFormula" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAgAAAgAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MBinaryConnectiveFormula" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAABAEAAAAAgAAAgAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MQuantifierFormula" Collapsed="true">
+    <Position X="17.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAgAAAgAAIAAAgADAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MObject" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgAAAAAAgAAEAABAAAAAAgAAIAAIAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MTerm" Collapsed="true">
+    <Position X="30.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MVariable" Collapsed="true">
+    <Position X="31.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAIAAAAAAAggIIAAIAgRAAAAAAAE=</HashCode>
+      <FileName>IO_Classes\IO_MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MBoundVariable" Collapsed="true">
+    <Position X="31.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAgAIAAAAAQAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MFunction" Collapsed="true">
+    <Position X="26.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAAAAAggAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MClassTerm" Collapsed="true">
+    <Position X="29" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAAAAAggAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MTheorem" Collapsed="true">
+    <Position X="34.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgCEEgKIAAQFAAAAAACGAAAgoAAAAgBIAAAAAAQ=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDeduction" Collapsed="true">
+    <Position X="46.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEBCAAAMAGAAAQFQAIABABAACCAIAAIAgJBAwAAIAw=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDeductionStep" Collapsed="true">
+    <Position X="57.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEGEHSQAQBEABAAAgIAAAAIAAAAhFAAAQAAAQ=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MSpecificationDeductionStep" Collapsed="true">
+    <Position X="59.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQEACEAAAAgAAAAAAAIAAAAARAAAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MPredicateSpecificationDeductionStep" Collapsed="true">
+    <Position X="62" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQAAAEAAAAAAAAAAAAIAAAABBAgEQAAAg=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MVariableSubstitutionDeductionStep" Collapsed="true">
+    <Position X="64.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAARAEAAQEAAEAAAAAAAAAAAAIAAAAgBAAAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MTrivialisationDeductionStep" Collapsed="true">
+    <Position X="66.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABCAAAEAAQAAAEAAAAAAQAAAAAIAAAAABAAAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MUniversalGeneralisationDeductionStep" Collapsed="true">
+    <Position X="48.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEAAQgCAEAAAAACAAAAAAIIAAAAJCAAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MUniversalInstantiationDeductionStep" Collapsed="true">
+    <Position X="50.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQgAAEAAQQAAAAAAAAIAAAAABCAAQEAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MExistentialGeneralisationDeductionStep" Collapsed="true">
+    <Position X="53" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEAAQgCAEAAAAACAAAAAAIIAAAAJCAAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MExistentialInstantiationDeductionStep" Collapsed="true">
+    <Position X="55.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQgAAEAAQAAAAAAAAAIAAAAABCAAQQQAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MFormulaSubstitutionDeductionStep" Collapsed="true">
+    <Position X="57.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAQAiAEAAAAACAAAAAAIIAAAAJAIAQAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MVariableSubstitutions" Collapsed="true">
+    <Position X="44.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAgAAAAEAAAAAIAAAIAAAEABAAACAAIA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MSubstitutionJustification" Collapsed="true">
+    <Position X="18" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAgAAAAAAAAAIAAAAAJAAAAAAIA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MAxiomaticSubstitutionJustification" Collapsed="true">
+    <Position X="16.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAgAAAAAAAAAYIEAAABAAAAACAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MEqualitySubstitutionJustification" Collapsed="true">
+    <Position X="19" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAgAAEAAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MTheorem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MVisualisationScheme" Collapsed="true">
+    <Position X="48.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAABACAQoAIAEAAAAAAAAIAAAAENAAAABAAA=</HashCode>
+      <FileName>IO_Classes\IO_MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MArrangementTree" Collapsed="true">
+    <Position X="44.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IYAAAAAgQAAAigDFACAQAAASAAAIIIAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MSymbol" Collapsed="true">
+    <Position X="38.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgCAAAAAAAAAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>IO_Classes\IO_MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MTextSymbol" Collapsed="true">
+    <Position X="37" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAAAAAAAAgCAAAAAAAAAAAAAIAAAAABACAAAAEA=</HashCode>
+      <FileName>IO_Classes\IO_MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MShapeSymbol" Collapsed="true">
+    <Position X="39.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAgAAAhCAAIAAIIAAAgCEIAAUABBAQAAABAA=</HashCode>
+      <FileName>IO_Classes\IO_MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DocumentLoader" Collapsed="true">
+    <Position X="44.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACQQACoIMKEAAAAAQQABCAIAgQUACEBAQ0AGIUAA=</HashCode>
+      <FileName>DocumentLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.FileID" Collapsed="true">
+    <Position X="26.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAFIAAAAEQIYAAkAoAAAgQIgACAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.ContextFileID" Collapsed="true">
+    <Position X="26.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAQIAAAAAAAAAQAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.TheoremFileID" Collapsed="true">
+    <Position X="30.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAIAAAAAAAAAAAIAAAgABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DeductionFileID" Collapsed="true">
+    <Position X="29" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAABAAAAAAAIAAgAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DeductionStepFileID" Collapsed="true">
+    <Position X="29" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAAAAAAIAAAAAAAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DefinitionFileID" Collapsed="true">
+    <Position X="22.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIEAAAABAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.ContextStatementFileID" Collapsed="true">
+    <Position X="24.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAIAAAAAAAAAAQIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.TheoremStatementFileID" Collapsed="true">
+    <Position X="31.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAIAAAAAAAAAAAIAAAgABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DeductionStepStatementFileID" Collapsed="true">
+    <Position X="29" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIAAAAAAAIAAAAAAAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.DefinitionStatementFileID" Collapsed="true">
+    <Position X="22.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAIAAAAAAAAAAAIAAAAQBAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.VariableFileID" Collapsed="true">
+    <Position X="26.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAAAAAAAAIAAAAAAAAAAAIAAAAABAAAAAAAA=</HashCode>
+      <FileName>FileIDManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDocumentManager" Collapsed="true">
+    <Position X="48.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAkAAAABAAAAAAAAAAAAACAAAAAAAABAA=</HashCode>
+      <FileName>MDocumentManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MExpression" Collapsed="true">
+    <Position X="20" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAQEAgAACABAAAAAAAABGgAAAQgAIggAARAAAChA=</HashCode>
+      <FileName>MExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MPlaceholderFormula" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAIAAAAAAAgAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>MFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.IdTable&lt;TLeft, TRight&gt;" Collapsed="true">
+    <Position X="50" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAAAAAAAAEAAAEAASAAAQAACAACACARAEAAAA=</HashCode>
+      <FileName>MObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.Helper" Collapsed="true">
+    <Position X="48.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAEAAAAAAAAAAAAAACAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>MObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.PathExtensions" Collapsed="true">
+    <Position X="50" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MPlaceholderTerm" Collapsed="true">
+    <Position X="33.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAIAAAAAAAgAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>MTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MVisualisation" Collapsed="true">
+    <Position X="46.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAgCAAIACKgIUEABAAAAAAQCASwAgAAg=</HashCode>
+      <FileName>MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TraceBackend.MDrawOptions" Collapsed="true">
+    <Position X="50" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgBMBABAAAAAAAEBAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TraceBackend.MDrawSpecification" Collapsed="true">
+    <Position X="44.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEgAAAAAAIAAAAAAAAAAAAAAAEAAACAAAE=</HashCode>
+      <FileName>MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TraceBackend.MStatementType" Collapsed="true">
+    <Position X="48.25" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAoAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MContext.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TraceBackend.IdRuleset" Collapsed="true">
+    <Position X="44.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAACAAAAAAABAAgAAAAAAAA=</HashCode>
+      <FileName>MObject.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TraceBackend.MAnchor" Collapsed="true">
+    <Position X="46.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAgAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>MVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

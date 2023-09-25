@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="0">
+  <backend>
+    <references count="1">
+      <ref id="0">01-BinConDefns.xtr</ref>
+    </references>
+    <id-manager>
+      <max-id type="context" value="1" />
+      <max-id type="theorem" value="1" />
+      <max-id type="definition" value="4" />
+      <max-id type="deduction" value="1" />
+      <max-id type="deductionstep" value="11" />
+      <max-id type="contextstatement" value="0" />
+      <max-id type="theoremstatement" value="1" />
+      <max-id type="definitionstatement" value="4" />
+      <max-id type="deductionstepstatement" value="11" />
+      <max-id type="variable" value="6" />
+    </id-manager>
+    <contexts count="1">
+      <context id="2.0.1">
+        <supercontexts count="0" />
+        <variables count="6">
+          <variable id="B.0.1.1">
+            <symbol>a</symbol>
+          </variable>
+          <variable id="B.0.1.2">
+            <symbol>b</symbol>
+          </variable>
+          <variable id="B.0.1.3">
+            <symbol>c</symbol>
+          </variable>
+          <variable id="B.0.1.4">
+            <symbol>d</symbol>
+          </variable>
+          <variable id="B.0.1.5">
+            <symbol>e</symbol>
+          </variable>
+          <variable id="B.0.1.6">
+            <symbol>f</symbol>
+          </variable>
+        </variables>
+        <definitions count="4">
+          <definition type="1" id="3.0.1.1">
+            <functionsymbol argcount="2" boundvarcount="0" formulacount="0"></functionsymbol>
+            <axioms count="1">
+              <statement id="8.0.1.1.1">
+                <expression>0000000205073.1.1.1000003000202073.0.1.100020007B.0.1.100020007B.0.1.2000202073.0.1.100020007B.0.1.300020007B.0.1.4000105073.1.1.300020300020007B.0.1.100020007B.0.1.300020300020007B.0.1.200020007B.0.1.4</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="04">,</sym>
+                <latex />
+                <brackets>030000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="2" anchor="0" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="1" anchor="0" xOff="0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.2">
+            <quantifier type="2" termcount="1" boundvarcount="0" formulacount="0">Pair</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.2.2">
+                <expression>0000000206073.0.1.2000202073.0.1.100020007B.0.1.100020007B.0.1.2</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">is a pair</sym>
+                <latex />
+                <brackets>0000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="2" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="1" id="3.0.1.3">
+            <functionsymbol argcount="3" boundvarcount="0" formulacount="0"></functionsymbol>
+            <axioms count="1">
+              <statement id="8.0.1.3.3">
+                <expression>0000000203000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.1000202073.0.1.100020007B.0.1.200020007B.0.1.3</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="2">
+                <sym t="0" f="04">,</sym>
+                <sym t="0" f="04">,</sym>
+                <latex />
+                <brackets>03000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="0" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="3" anchor="0" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="1" anchor="0" xOff="0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                        <tree myind="4" anchor="0" xOff="-0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                          <tree myind="2" anchor="0" xOff="0,01" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                        </tree>
+                      </tree>
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="4" id="3.0.1.4">
+            <quantifier type="2" termcount="1" boundvarcount="0" formulacount="0">Triple</quantifier>
+            <axioms count="1">
+              <statement id="8.0.1.4.4">
+                <expression>0000000206073.0.1.4000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3</expression>
+                <val v="True" a="True" c="0" />
+                <restrictedvars count="0" />
+              </statement>
+            </axioms>
+            <visualizations count="1">
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">is a triple</sym>
+                <latex />
+                <brackets>0000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+        </definitions>
+        <axioms count="0" />
+        <theorems count="1">
+          <theorem id="4.0.1.1" hasdeduction="True">
+            <statement id="9.0.1.1.1">
+              <expression>0000000205073.1.1.1000103000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.300020007B.0.1.400020007B.0.1.500020007B.0.1.6000105073.1.1.300010300020007B.0.1.100020007B.0.1.4000205073.1.1.300010300020007B.0.1.200020007B.0.1.500010300020007B.0.1.300020007B.0.1.6</expression>
+              <val v="True" a="False" c="0" />
+              <restrictedvars count="0" />
+            </statement>
+            <deduction id="5.0.1.1.1" stepcount="10">
+              <step type="3" id="6.0.1.1.1.1">
+                <reduce>False</reduce>
+                <premise>8.0.1.3.3</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.1.1">
+                    <expression>0000000203000202073.0.1.300020007B.0.1.400020007B.0.1.500020007B.0.1.6000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="3">
+                  <subs>
+                    <l>B.0.1.1</l>
+                    <expression>000000020007B.0.1.4</expression>
+                    <j t="0" />
+                  </subs>
+                  <subs>
+                    <l>B.0.1.2</l>
+                    <expression>000000020007B.0.1.5</expression>
+                    <j t="0" />
+                  </subs>
+                  <subs>
+                    <l>B.0.1.3</l>
+                    <expression>000000020007B.0.1.6</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.2">
+                <reduce>True</reduce>
+                <premise>8.0.1.1.1</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.2.2">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.100020007B.0.1.2000202073.0.1.100020007B.0.1.3000202073.0.1.100020007B.0.1.500020007B.0.1.6000105073.1.1.300020300020007B.0.1.100020007B.0.1.300020300020007B.0.1.2000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="1">
+                  <subs>
+                    <l>B.0.1.4</l>
+                    <expression>0000000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.3">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.2.2</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.3.3">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.100020007B.0.1.2000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6000105073.1.1.300020300020007B.0.1.100020007B.0.1.400020300020007B.0.1.2000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="1">
+                  <subs>
+                    <l>B.0.1.3</l>
+                    <expression>000000020007B.0.1.4</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.4">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.3.3</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.4.4">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.1000202073.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6000105073.1.1.300010300020007B.0.1.100020007B.0.1.4000103000202073.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="1">
+                  <subs>
+                    <l>B.0.1.2</l>
+                    <expression>0000000202073.0.1.100020007B.0.1.200020007B.0.1.3</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.6">
+                <reduce>False</reduce>
+                <premise>8.0.1.1.1</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.6.6">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.100020007B.0.1.2000202073.0.1.100020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.100020007B.0.1.500020300020007B.0.1.200020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="2">
+                  <subs>
+                    <l>B.0.1.3</l>
+                    <expression>000000020007B.0.1.5</expression>
+                    <j t="0" />
+                  </subs>
+                  <subs>
+                    <l>B.0.1.4</l>
+                    <expression>000000020007B.0.1.6</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.7">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.6.6</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.7.7">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.100020007B.0.1.3000202073.0.1.100020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.100020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="1">
+                  <subs>
+                    <l>B.0.1.2</l>
+                    <expression>000000020007B.0.1.3</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="3" id="6.0.1.1.1.8">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.7.7</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.8.8">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.200020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <substitutions count="1">
+                  <subs>
+                    <l>B.0.1.1</l>
+                    <expression>000000020007B.0.1.2</expression>
+                    <j t="0" />
+                  </subs>
+                </substitutions>
+              </step>
+              <step type="9" id="6.0.1.1.1.9">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.4.4</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.9.9">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.100020007B.0.1.1000202073.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.100020007B.0.1.4000205073.1.1.300020300020007B.0.1.200020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <old>
+                  <expression>0000000203000202073.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                </old>
+                <new>
+                  <expression>0000000205073.1.1.300020300020007B.0.1.200020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                </new>
+                <justification>A.0.1.1.1.8.8</justification>
+              </step>
+              <step type="10" id="6.0.1.1.1.A">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.9.9</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.A.A">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.100020007B.0.1.4000205073.1.1.300020300020007B.0.1.200020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <old>
+                  <expression>0000000202073.0.1.100020007B.0.1.1000202073.0.1.100020007B.0.1.200020007B.0.1.3</expression>
+                </old>
+                <new>
+                  <expression>0000000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3</expression>
+                </new>
+                <justification>8.0.1.3.3</justification>
+              </step>
+              <step type="10" id="6.0.1.1.1.B">
+                <reduce>False</reduce>
+                <premise>A.0.1.1.1.A.A</premise>
+                <consequence>
+                  <statement id="A.0.1.1.1.B.B">
+                    <expression>0000000205073.1.1.1000203000202073.0.1.300020007B.0.1.100020007B.0.1.200020007B.0.1.3000202073.0.1.300020007B.0.1.400020007B.0.1.500020007B.0.1.6000205073.1.1.300020300020007B.0.1.100020007B.0.1.4000205073.1.1.300020300020007B.0.1.200020007B.0.1.500020300020007B.0.1.300020007B.0.1.6</expression>
+                    <val v="True" a="False" c="0" />
+                    <restrictedvars count="0" />
+                  </statement>
+                </consequence>
+                <old>
+                  <expression>0000000202073.0.1.100020007B.0.1.4000202073.0.1.100020007B.0.1.500020007B.0.1.6</expression>
+                </old>
+                <new>
+                  <expression>0000000202073.0.1.300020007B.0.1.400020007B.0.1.500020007B.0.1.6</expression>
+                </new>
+                <justification>A.0.1.1.1.1.1</justification>
+              </step>
+            </deduction>
+          </theorem>
+        </theorems>
+      </context>
+    </contexts>
+  </backend>
+  <structure>
+    <struct hidden="False" collapsed="False" type="0" id="1.0" children="1">
+      <struct hidden="False" collapsed="False" type="0" id="2.0.1" children="5">
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.1" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.1" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.1" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.1.1" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.2" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.2" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.2" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.2.2" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.3" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.3" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.3" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.3.3" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.4" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.4" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.4" children="1">
+            <struct hidden="False" collapsed="False" type="0" id="8.0.1.4.4" children="0" />
+          </struct>
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="4.0.1.1" children="2">
+          <struct hidden="False" collapsed="False" type="0" id="9.0.1.1.1" children="0" />
+          <struct hidden="False" collapsed="False" type="0" id="5.0.1.1.1" children="10">
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.1" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.2" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.3" children="0" />
+            <struct hidden="False" collapsed="False" type="0" id="6.0.1.1.1.4" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.6" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.7" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.8" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.9" children="0" />
+            <struct hidden="True" collapsed="False" type="0" id="6.0.1.1.1.A" children="0" />
+            <struct hidden="False" collapsed="False" type="0" id="6.0.1.1.1.B" children="0" />
+          </struct>
+        </struct>
+      </struct>
+    </struct>
+  </structure>
+</document>

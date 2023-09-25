@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="F:\Projekte\TraceRepo\TraceUI\bin\Debug\TraceUI.exe">
+   <Modules>
+    <Module Name="traceui.exe">
+     <Namespaces>
+      <Namespace Name="TraceUI">
+       <Types>
+        <Type Name="ElementFinder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BracketSettingsChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Name="Second" Certainty="95" Level="Error">Deklarieren Sie den zweiten Parameter von "'EventHandler&lt;BracketMode&gt;'" als EventArgs oder als Instanz eines Typs, durch den EventArgs erweitert wird, mit dem Namen "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VariableSettingsChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Name="Second" Certainty="95" Level="Error">Deklarieren Sie den zweiten Parameter von "'EventHandler&lt;ValueTuple&lt;MVariable, bool&gt;&gt;'" als EventArgs oder als Instanz eines Typs, durch den EventArgs erweitert wird, mit dem Namen "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="KeyboardHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetKeyboardState(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Als P/Invoke-Methode muss 'KeyboardHelper.GetKeyboardState(byte[])' in einer Klasse mit dem Namen NativeMethods, SafeNativeMethods oder UnsafeNativeMethods definiert werden.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Ändern Sie den Zugriff auf P/Invoke 'KeyboardHelper.GetKeyboardState(byte[])' so, dass die Methode außerhalb der Assembly nicht mehr sichtbar ist.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MapVirtualKey(System.UInt32,TraceUI.KeyboardHelper+MapType)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Als P/Invoke-Methode muss 'KeyboardHelper.MapVirtualKey(uint, KeyboardHelper.MapType)' in einer Klasse mit dem Namen NativeMethods, SafeNativeMethods oder UnsafeNativeMethods definiert werden.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Ändern Sie den Zugriff auf P/Invoke 'KeyboardHelper.MapVirtualKey(uint, KeyboardHelper.MapType)' so, dass die Methode außerhalb der Assembly nicht mehr sichtbar ist.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToUnicode(System.UInt32,System.UInt32,System.Byte[],System.Text.StringBuilder,System.Int32,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Als P/Invoke-Methode muss 'KeyboardHelper.ToUnicode(uint, uint, byte[], StringBuilder, int, uint)' in einer Klasse mit dem Namen NativeMethods, SafeNativeMethods oder UnsafeNativeMethods definiert werden.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Ändern Sie den Zugriff auf P/Invoke 'KeyboardHelper.ToUnicode(uint, uint, byte[], StringBuilder, int, uint)' so, dass die Methode außerhalb der Assembly nicht mehr sichtbar ist.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SymbolEditor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ReadFromFile(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceUI\Tools" File="SymbolEditor.cs" Line="314">Das Objekt "'s'" kann mehrere Male in der 'SymbolEditor.ReadFromFile(string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 314</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteToFile(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-19 20:48:36Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceUI\Tools" File="SymbolEditor.cs" Line="275">Das Objekt "'s'" kann mehrere Male in der 'SymbolEditor.WriteToFile(string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 275</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="TraceUI.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2023-09-19 20:48:36Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Nicht aufgerufenen privaten Code vermeiden</Name>
+   <Description>Es ist nicht aufgerufener Code vorhanden, der nicht extern sichtbar und kein bekannter Laufzeit-Einstiegspunkt ist. Wenn diese Verletzung einen Fehler auslöst, senden Sie einen Problembericht an das Visual Studio-Codeanalyse-Team.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>Ereignishandler korrekt deklarieren</Name>
+   <Description>Gemäß der Konvention weisen .NET-Ereignisse zwei Parameter auf, die den Absender des Ereignisses und die Ereignisdaten angeben. Ereignishandlersignaturen sollten folgendes Format aufweisen: void MyEventHandler(object sender, EventArgs e). Der sender-Parameter weist immer den Typ "System.Object" auf, selbst wenn ein spezifischerer Typ verwendet werden kann. Der e-Parameter weist immer den Typ "System.EventArgs" auf. Ereignisse, die keine Ereignisdaten bereitstellen, sollten den Delegattypen "System.EventHandler" verwenden. Ereignishandler geben "void" zurück, damit jedes Ereignis an mehrere Zielmethoden gesendet werden kann. Alle von einem Ziel zurückgegebenen Werte würden nach dem ersten Aufruf verloren gehen.</Description>
+   <Resolution Name="Second">Deklarieren Sie den zweiten Parameter von "{0}" als EventArgs oder als Instanz eines Typs, durch den EventArgs erweitert wird, mit dem Namen "e".</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>P/Invokes in NativeMethods-Klasse verschieben</Name>
+   <Description>Dieser Typ enthält Member mit dem DllImport-Attribut. Member mit dem DllImport-Attribut sollten in Klassen mit den Namen NativeMethods, SafeNativeMethods oder UnsafeNativeMethods enthalten sein.</Description>
+   <Resolution Name="Default">Als P/Invoke-Methode muss {0} in einer Klasse mit dem Namen NativeMethods, SafeNativeMethods oder UnsafeNativeMethods definiert werden.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Objekte nicht mehrmals verwerfen</Name>
+   <Description>Eine ordnungsgemäß implementierte Dispose-Methode kann mehrere Male aufgerufen werden, ohne dass eine Ausnahme ausgelöst wird. Dies ist jedoch nicht garantiert. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.</Description>
+   <Resolution Name="Default">Das Objekt "{0}" kann mehrere Male in der {1}-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 314</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes dürfen nicht sichtbar sein.</Name>
+   <Description>Die Interopebene sollte nicht öffentlich sein. Das DllImport-Attribut sollte nicht auf öffentlich zugängliche Member angewendet werden (öffentlich oder geschützt).</Description>
+   <Resolution Name="Default">Ändern Sie den Zugriff auf P/Invoke {0} so, dass die Methode außerhalb der Assembly nicht mehr sichtbar ist.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategorie</String>
+  <String Key="Certainty">Sicherheit</String>
+  <String Key="CollapseAll">Alle zuklappen</String>
+  <String Key="CheckId">Prüf-ID</String>
+  <String Key="Error">Fehler</String>
+  <String Key="Errors">Fehler</String>
+  <String Key="ExpandAll">Alle aufklappen</String>
+  <String Key="Help">Hilfe</String>
+  <String Key="Line">Zeile</String>
+  <String Key="Messages">Meldung(en)</String>
+  <String Key="LocationNotStoredInPdb">[Nicht in PDB gespeicherter Speicherort]</String>
+  <String Key="Project">Projekt</String>
+  <String Key="Resolution">Auflösung</String>
+  <String Key="Rule">Regel</String>
+  <String Key="RuleFile">Regeldatei</String>
+  <String Key="RuleDescription">Regelbeschreibung</String>
+  <String Key="Source">Quelle</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Ziel</String>
+  <String Key="Warning">Warnung</String>
+  <String Key="Warnings">Warnung(en)</String>
+  <String Key="ReportTitle">Codeanalysebericht</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,273 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Diagnostics;
+using TraceBackend;
+using System.IO;
+
+namespace TraceUI
+{
+    public partial class MainForm : Form
+    {
+
+        public MDocument Document;
+
+        // ab hier kaka
+        
+        static float real_PPI;
+        static float zoom;
+        public static float PPI;
+
+        MPredicateFormula Pf;
+        MPredicateFormula Qf;
+        MBinaryConnectiveFormula imp3;
+        MStatement Ax1;
+        MStatement Ax2;
+        MStatement Arg;
+
+        MUndefinedFormula A;
+        MUndefinedFormula B;
+
+
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Check if important directories exist
+            
+
+            zoom = 1.0F;
+            Graphics g = CreateGraphics();
+            real_PPI = g.DpiX;
+            PPI = real_PPI * zoom;
+            /////////////////////////
+            // ab hier bullshit /////
+            /////////////////////////
+
+            Document = MDocumentManager.CreateDocument();
+            MContext X = Document.CreateContext();
+
+            MTrivialFormula t = MTrivialFormula._True;
+            MTrivialFormula f = MTrivialFormula._False;
+
+            //Definitions
+            //Consequence
+            MBinaryConnective conseq = X.CreateBinaryConnective(true, false, true, true, "=>");
+            MVisualisationScheme Vconseq = conseq.CreateVisualisation();
+            int l = 0; int r = 1;
+            int s1 = Vconseq.AddSymbol(MShapeSymbol.FromName("rightDoubleArrow"));
+            Vconseq.Arrange(l, s1, MAnchor.left, x: -0.05F);
+            Vconseq.Arrange(r, s1, MAnchor.right, x: 0.05F);
+            Vconseq.AddSymbol(MShapeSymbol.FromName("("), l, MAnchor.left);
+            Vconseq.AddSymbol(MShapeSymbol.FromName(")"), l, MAnchor.right);
+            Vconseq.AddSymbol(MShapeSymbol.FromName("("), r, MAnchor.left);
+            Vconseq.AddSymbol(MShapeSymbol.FromName(")"), r, MAnchor.right);
+            //Equivalence
+            MBinaryConnective equiv = X.CreateBinaryConnective(true, false, false, true, "<=>");
+            MVisualisationScheme Vequiv = equiv.CreateVisualisation();
+            int s3 = Vequiv.AddSymbol(MShapeSymbol.FromName("equiv"));
+            Vequiv.Arrange(l, s3, MAnchor.left, x: -0.05F);
+            Vequiv.Arrange(r, s3, MAnchor.right, x: 0.05F);
+            Vequiv.AddSymbol(MShapeSymbol.FromName("("), l, MAnchor.left);
+            Vequiv.AddSymbol(MShapeSymbol.FromName(")"), l, MAnchor.right);
+            Vequiv.AddSymbol(MShapeSymbol.FromName("("), r, MAnchor.left);
+            Vequiv.AddSymbol(MShapeSymbol.FromName(")"), r, MAnchor.right);
+            //And
+            MBinaryConnective and = X.CreateBinaryConnective(true, false, false, false, "AND");
+            MVisualisationScheme Vand = and.CreateVisualisation();
+            int s2 = Vand.AddSymbol(MShapeSymbol.FromName("wedge"));
+            Vand.Arrange(l, s2, MAnchor.left, x:-0.05F);
+            Vand.Arrange(r, s2, MAnchor.right, x: 0.05F);
+            Vand.AddSymbol(MShapeSymbol.FromName("("), l, MAnchor.left);
+            Vand.AddSymbol(MShapeSymbol.FromName(")"), l, MAnchor.right);
+            Vand.AddSymbol(MShapeSymbol.FromName("("), r, MAnchor.left);
+            Vand.AddSymbol(MShapeSymbol.FromName(")"), r, MAnchor.right);
+            //MBinaryConnective or = X.CreateBinaryConnective(true, true, true, false, "OR");
+            //MBinaryConnective xor = X.CreateBinaryConnective(false, true, true, false, "XOR");
+
+            //Existential Quantor
+            MQuantifier thereis = X.CreateQuantifier("There exists");
+            thereis.type = MQuantifier.QuantifierType.Existential;
+            MVisualisationScheme Vthereis = thereis.CreateVisualisation();
+            int s4 = Vthereis.AddSymbol(new MTextSymbol("There exists "));
+            Vthereis.Arrange(0, s4);
+            int s5 = Vthereis.AddSymbol(new MTextSymbol(" such that: "), 0);
+            Vthereis.Arrange(1, s5);
+
+            //universal Quantor
+            MQuantifier forall = X.CreateQuantifier("For all");
+            forall.type = MQuantifier.QuantifierType.Universal;
+            MVisualisationScheme Vforall = forall.CreateVisualisation();
+            int s6 = Vforall.AddSymbol(new MTextSymbol("For all "));
+            Vforall.Arrange(0, s6);
+            int s7 = Vforall.AddSymbol(new MTextSymbol(", "), 0);
+            Vforall.Arrange(1, s7);
+            Vforall.AddSymbol(new MTextSymbol(" holds"), 1);
+
+            //Predicate: is human
+            MPredicate human = X.CreatePredicate(1, "Human");
+            MVisualisationScheme Vhuman = human.CreateVisualisation();
+            Vhuman.Arrange(0);
+            Vhuman.AddSymbol(new MTextSymbol(" is a human"), 0);
+
+            //Predicate: is called Julian
+            MPredicate julian = X.CreatePredicate(1, "Julian");
+            MVisualisationScheme Vjulian = julian.CreateVisualisation();
+            Vjulian.Arrange(0);
+            Vjulian.AddSymbol(new MTextSymbol(" is called Julian"), 0);
+            MVariable x1 = X.CreateVariable("x");
+            julian.CreateAxiom(new MQuantifierFormula(forall, x1, new MBinaryConnectiveFormula(conseq,
+                new MPredicateFormula(julian, new MTerm[] { x1 }),
+                new MPredicateFormula(human, new MTerm[] { x1 }))));
+            MVariable x2 = X.CreateVariable("x");
+            julian.CreateAxiom(new MQuantifierFormula(thereis, x2, new MPredicateFormula(julian, new MTerm[] { x2 })));
+
+            //Predicate: is called Katrin
+            MPredicate Katrin = X.CreatePredicate(1, "Katrin");
+            MVisualisationScheme VKatrin = Katrin.CreateVisualisation();
+            VKatrin.Arrange(0);
+            VKatrin.AddSymbol(new MTextSymbol(" is called Katrin"), 0);
+            MVariable x3 = X.CreateVariable("x");
+            Katrin.CreateAxiom(new MQuantifierFormula(forall, x3, new MBinaryConnectiveFormula(conseq,
+                new MPredicateFormula(Katrin, new MTerm[] { x3 }),
+                new MPredicateFormula(human, new MTerm[] { x3 }))));
+            MVariable x4 = X.CreateVariable("x");
+            Katrin.CreateAxiom(new MQuantifierFormula(thereis, x4, new MPredicateFormula(Katrin, new MTerm[] { x4 })));
+            MVariable x5 = X.CreateVariable("x");
+            Katrin.CreateAxiom(new MQuantifierFormula(forall, x5, new MBinaryConnectiveFormula(conseq,
+                new MPredicateFormula(Katrin, new MTerm[] { x5 }),
+               new MNegationFormula(new MPredicateFormula(julian, new MTerm[] { x5 })))));
+
+            A = new MUndefinedFormula("A");
+            B = new MUndefinedFormula("B");
+
+            MBinaryConnectiveFormula imp1 = new MBinaryConnectiveFormula(conseq, A, B);
+            MBinaryConnectiveFormula and1 = new MBinaryConnectiveFormula(and, A, imp1);
+            MBinaryConnectiveFormula imp2 = new MBinaryConnectiveFormula(conseq, and1, B);
+            
+            DateTime start = DateTime.Now;
+
+            //Tautologies
+            MTheorem taut1 = X.CreateTheorem();
+            Arg = taut1.CreateStatement(imp2);
+            taut1.Validate();
+
+            MTheorem taut2 = X.CreateTheorem();
+            MStatement raa = taut2.CreateStatement(new MBinaryConnectiveFormula(
+                equiv, new MBinaryConnectiveFormula(conseq, A, B), new MBinaryConnectiveFormula(conseq, new MNegationFormula(B), new MNegationFormula(A))));
+            taut2.Validate();
+
+            MTheorem taut3 = X.CreateTheorem();
+            MStatement doubleneg = taut3.CreateStatement(new MBinaryConnectiveFormula(equiv, new MNegationFormula(new MNegationFormula(A)), A));
+            taut3.Validate();
+
+
+            //Theorem 1: There exists a Human
+            MTheorem T1 = X.CreateTheorem();
+            MVariable vs2 = X.CreateVariable();
+            T1.CreateStatement(new MQuantifierFormula(thereis, vs2, new MPredicateFormula(human, new MTerm[] { vs2 })));
+            MDeduction D1 = T1.CreateDeduction();
+            MExistentialInstantiationDeductionStep step1 = D1.CreateExistentiallyInstantiatingStep(julian.Axioms[1]); // we chose j, so that j is called human
+            MVariable vs1 = X.CreateVariable("j");
+            step1.Instantiate(vs1);
+            step1.Validate();
+            MUniversalInstantiationDeductionStep step3 = D1.CreateUniversallyInstantiatingStep(julian.Axioms[0]); // we instantiate j is called julian => j is human
+            step3.Instantiate(vs1);
+            step3.Validate();
+            MTrivialisationDeductionStep step4 = D1.CreateTrivialisingStep(step3.Consequence); // we remind ourselves that the premise of step2 is now given
+            step4.CreateTrivialisation(step1.Consequence);
+            step4.Reduce = true;
+            step4.Validate();
+            MExistentialGeneralisationDeductionStep step5 = D1.CreateExistentiallyGeneralisingStep(step4.Consequence); // since we found j wich is human, at least one human exists.
+            MVariable vs3 = step5.Generalise(thereis, vs1);
+            vs3.stringSymbol = "x";
+            T1.Validate();
+
+            //Theorem 2: if you are called Julian, you are not called Katrin.
+            MTheorem T2 = X.CreateTheorem();
+            MVariable vs4 = X.CreateVariable();
+            T2.CreateStatement(new MQuantifierFormula(forall, vs4, new MBinaryConnectiveFormula(conseq,
+                new MPredicateFormula(julian, new MTerm[] { vs4 }),
+               new MNegationFormula(new MPredicateFormula(Katrin, new MTerm[] { vs4 })))));
+            MDeduction D2 = T2.CreateDeduction();
+            MSpecificationDeductionStep step6 = D2.CreateSpecificatingStep(raa);
+            MVariable vs5 = X.CreateVariable("h");
+            step6.CreateSpecification(A, new MPredicateFormula(Katrin, new MTerm[] { vs5 }));
+            step6.CreateSpecification(B, new MNegationFormula(new MPredicateFormula(julian, new MTerm[] { vs5 })));
+            step6.Validate();
+            MUniversalInstantiationDeductionStep step7 = D2.CreateUniversallyInstantiatingStep(Katrin.Axioms[2]);
+            step7.Instantiate(vs5);
+            step7.Validate();
+            MTrivialisationDeductionStep step8 = D2.CreateTrivialisingStep(step6.Consequence);
+            step8.CreateTrivialisation(step7.Consequence);
+            step8.Reduce = true;
+            step8.Validate();
+            MSpecificationDeductionStep step8point5 = D2.CreateSpecificatingStep(taut3.Statement);
+            step8point5.CreateSpecification(A, new MPredicateFormula(julian, new MTerm[] { vs5 }));
+            step8point5.Validate();
+            MFormulaSubstitutionDeductionStep step9 = D2.CreateFormulaSubstitutingStep(step8.Consequence);
+            step9.Substitute(new MNegationFormula(new MNegationFormula(new MPredicateFormula(julian, new MTerm[] { vs5 }))), 
+                new MPredicateFormula(julian, new MTerm[] { vs5 }), step8point5.Consequence);
+            step9.Validate();
+            MUniversalGeneralisationDeductionStep step10 = D2.CreateUniversallyGeneralisingStep(step9.Consequence);
+            MVariable vs6 = step10.Generalise(forall, vs5);
+            vs6.stringSymbol = "x";
+            step10.Validate();
+            T2.Validate();
+            
+            Debug.WriteLine(Document.ToString());
+
+
+            Debug.WriteLine("Validation took " + (DateTime.Now - start).ToString());
+
+            Document.ToFile("test.tr");
+
+            MDocument Doc2 = MDocument.FromFile("test.tr");
+
+            Debug.WriteLine(Doc2.ToString());
+            
+
+            MVisualisation V = julian.Axioms[0]._F.GetVisualisation();
+            //MVisualisation V = (Arg._F as MBinaryConnectiveFormula)._F[0].GetVisualisation();
+            //MVisualisation V = Ax2.GetVisualisation();
+            V.GetSize(PPI);
+
+            visualisationDisplay1.Visualisation = V;
+            // https://en.wikipedia.org/wiki/List_of_rules_of_inference#Table:_Rules_of_Inference
+        }
+
+        private void visualisationDisplay1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void visualisationDisplay1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MainForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void visualisationDisplay1_MClick(object sender, EventArgs e)
+        {
+            if (e is MClickEventArgs ea)
+            {
+                Debug.WriteLine("Clicked!");
+                Debug.WriteLine(ea.Visualisation.ToString());
+                Debug.WriteLine(ea.symbolIndex);
+            }
+        }
+    }
+}

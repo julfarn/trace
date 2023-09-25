@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="0">
+  <backend>
+    <references count="0" />
+    <id-manager>
+      <max-id type="context" value="1" />
+      <max-id type="theorem" value="0" />
+      <max-id type="definition" value="4" />
+      <max-id type="deduction" value="0" />
+      <max-id type="deductionstep" value="0" />
+      <max-id type="contextstatement" value="0" />
+      <max-id type="theoremstatement" value="0" />
+      <max-id type="definitionstatement" value="0" />
+      <max-id type="deductionstepstatement" value="0" />
+      <max-id type="variable" value="0" />
+    </id-manager>
+    <contexts count="1">
+      <context id="2.0.1">
+        <supercontexts count="0" />
+        <variables count="0" />
+        <definitions count="4">
+          <definition type="3" id="3.0.1.1">
+            <bincon truthtable="9">&lt;=&gt;</bincon>
+            <axioms count="0" />
+            <visualizations count="2">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">equiv</sym>
+                <latex>%0% \; \Leftrightarrow \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                      <tree myind="2" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    </tree>
+                  </tree>
+                </tree>
+              </visualization>
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">is equivalent to</sym>
+                <latex>%0% \; \mathrm{is equivalent to} \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="3" id="3.0.1.2">
+            <bincon truthtable="D">=&gt;</bincon>
+            <axioms count="0" />
+            <visualizations count="2">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">rightDoubleArrow</sym>
+                <latex>%0% \; \Rightarrow \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">implies</sym>
+                <latex>%0% \; \mathrm{implies} \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="3" id="3.0.1.3">
+            <bincon truthtable="1">AND</bincon>
+            <axioms count="0" />
+            <visualizations count="2">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">wedge</sym>
+                <latex>%0% \; \wedge \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                  <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="1" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">and</sym>
+                <latex>%0% \; \mathrm{and} \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+          <definition type="3" id="3.0.1.4">
+            <bincon truthtable="7">OR</bincon>
+            <axioms count="0" />
+            <visualizations count="2">
+              <visualization ovch="0" symbols="1">
+                <sym t="1">vee</sym>
+                <latex>%0% \; \vee \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                  <tree myind="0" anchor="2" xOff="-0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                    <tree myind="1" anchor="0" xOff="0,03" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+              <visualization ovch="0" symbols="1">
+                <sym t="0" f="05">or</sym>
+                <latex>%0% \; \mathrm{or} \; %1%</latex>
+                <brackets>000000</brackets>
+                <tree myind="-1" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="1">
+                  <tree myind="2" anchor="0" xOff="0" yOff="0" xGrow="False" yGrow="False" small="False" branches="2">
+                    <tree myind="0" anchor="2" xOff="-0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                    <tree myind="1" anchor="0" xOff="0,02" yOff="0" xGrow="False" yGrow="False" small="False" branches="0" />
+                  </tree>
+                </tree>
+              </visualization>
+            </visualizations>
+          </definition>
+        </definitions>
+        <axioms count="0" />
+        <theorems count="0" />
+      </context>
+    </contexts>
+  </backend>
+  <structure>
+    <struct hidden="False" collapsed="False" type="0" id="1.0" children="1">
+      <struct hidden="False" collapsed="False" type="0" id="2.0.1" children="4">
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.1" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.1" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.1" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.2" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.2" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.2" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.3" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.3" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.3" children="0" />
+        </struct>
+        <struct hidden="False" collapsed="False" type="0" id="3.0.1.4" children="2">
+          <struct hidden="False" collapsed="False" type="2" id="3.0.1.4" children="0" />
+          <struct hidden="False" collapsed="False" type="1" id="3.0.1.4" children="0" />
+        </struct>
+      </struct>
+    </struct>
+  </structure>
+</document>

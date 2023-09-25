@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TraceBackend.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TextFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 12pt</Value>
+    </Setting>
+    <Setting Name="FormulaCursive" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Linux Libertine G, 12pt, style=Italic</Value>
+    </Setting>
+    <Setting Name="FormulaUpright" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Lucida Bright, 12pt</Value>
+    </Setting>
+    <Setting Name="Caligraphic" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Lucida Calligraphy, 12pt</Value>
+    </Setting>
+    <Setting Name="TextCursive" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 12pt, style=Italic</Value>
+    </Setting>
+    <Setting Name="Headline" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Times New Roman, 14.25pt</Value>
+    </Setting>
+    <Setting Name="Subheadline" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Times New Roman, 12pt, style=Italic</Value>
+    </Setting>
+    <Setting Name="LeftBracketSymbol" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(</Value>
+    </Setting>
+    <Setting Name="RightBracketSymbol" Type="System.String" Scope="User">
+      <Value Profile="(Default)">)</Value>
+    </Setting>
+    <Setting Name="SmallFactor" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.7</Value>
+    </Setting>
+    <Setting Name="AIDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F:\TraceAI</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="F:\Projekte\TraceRepo\TraceBackend\bin\Debug\TraceBackend.dll">
+   <Modules>
+    <Module Name="tracebackend.dll">
+     <Namespaces>
+      <Namespace Name="TraceBackend">
+       <Types>
+        <Type Name="DocumentLoader" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implementieren Sie IDisposable für "'DocumentLoader'", weil Member der folgenden IDisposable-Typen instanziiert werden: 'BinaryReader', 'BinaryWriter'. Wenn "'DocumentLoader'" bereits veröffentlicht wurde, wird das Hinzufügen von neuen Membern, die IDisposable für diesen Typ implementieren, für vorhandene Benutzer als fehlerhafte Änderung angesehen, die die Lauffähigkeit der Anwendung beeinträchtigt.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MFunction" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(TraceBackend.MFunctionSymbol,TraceBackend.MTerm[],TraceBackend.MVariable[],TraceBackend.MFormula[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="F:\Projekte\TraceRepo\TraceBackend" File="MTerm.cs" Line="286">'MFunction.MFunction(MFunctionSymbol, MTerm[], MVariable[], MFormula[])' enthält eine Aufrufkette, die zu einem Aufruf einer virtuellen Methode führt, die durch die Klasse definiert ist. Überprüfen Sie folgende Aufrufliste auf unerwartete Ergebnisse: &#xD;&#xA;&#xD;&#xA;MFunction..ctor(MFunctionSymbol, MTerm[], MVariable[], MFormula[])&#xD;&#xA;MExpression.UpdateBinding():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MQuantifierFormula" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(TraceBackend.MQuantifier,TraceBackend.MTerm[],TraceBackend.MVariable[],TraceBackend.MFormula[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="F:\Projekte\TraceRepo\TraceBackend" File="MFormula.cs" Line="555">'MQuantifierFormula.MQuantifierFormula(MQuantifier, MTerm[], MVariable[], MFormula[])' enthält eine Aufrufkette, die zu einem Aufruf einer virtuellen Methode führt, die durch die Klasse definiert ist. Überprüfen Sie folgende Aufrufliste auf unerwartete Ergebnisse: &#xD;&#xA;&#xD;&#xA;MQuantifierFormula..ctor(MQuantifier, MTerm[], MVariable[], MFormula[])&#xD;&#xA;MExpression.UpdateBinding():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MVisualisation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implementieren Sie IDisposable für "'MVisualisation'", weil Member der folgenden IDisposable-Typen instanziiert werden: 'Bitmap'. Wenn "'MVisualisation'" bereits veröffentlicht wurde, wird das Hinzufügen von neuen Membern, die IDisposable für diesen Typ implementieren, für vorhandene Benutzer als fehlerhafte Änderung angesehen, die die Lauffähigkeit der Anwendung beeinträchtigt.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="TraceBackend.AI">
+       <Types>
+        <Type Name="NeuralNetwork" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromFileOrRandom(TraceBackend.AI.NeuralLayout,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceBackend\AI" File="NeuralNetwork.cs" Line="249">Das Objekt "'Reader'" kann mehrere Male in der 'NeuralNetwork.FromFileOrRandom(NeuralLayout, string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 249</Issue>
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceBackend\AI" File="NeuralNetwork.cs" Line="247">Das Objekt "'stream'" kann mehrere Male in der 'NeuralNetwork.FromFileOrRandom(NeuralLayout, string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 247, 249</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToFile(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-19 20:48:19Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceBackend\AI" File="NeuralNetwork.cs" Line="288">Das Objekt "'Writer'" kann mehrere Male in der 'NeuralNetwork.ToFile(string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 288</Issue>
+             <Issue Certainty="75" Level="Warning" Path="F:\Projekte\TraceRepo\TraceBackend\AI" File="NeuralNetwork.cs" Line="287">Das Objekt "'stream'" kann mehrere Male in der 'NeuralNetwork.ToFile(string)'-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 287, 288</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Überschreibbare Methoden in Konstruktoren nicht aufrufen</Name>
+   <Description>Virtuelle Methoden, die in der Klasse definiert sind, sollten nicht von Konstruktoren aufgerufen werden. Wenn eine abgeleitete Klasse die Methode überschrieben hat, wird die Version der abgeleiteten Klasse aufgerufen, bevor der abgeleitete Klassenkonstruktor aufgerufen wird.</Description>
+   <Resolution Name="Default">{0} enthält eine Aufrufkette, die zu einem Aufruf einer virtuellen Methode führt, die durch die Klasse definiert ist. Überprüfen Sie folgende Aufrufliste auf unerwartete Ergebnisse: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Objekte nicht mehrmals verwerfen" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Objekte nicht mehrmals verwerfen</Name>
+   <Description>Eine ordnungsgemäß implementierte Dispose-Methode kann mehrere Male aufgerufen werden, ohne dass eine Ausnahme ausgelöst wird. Dies ist jedoch nicht garantiert. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.</Description>
+   <Resolution Name="Default">Das Objekt "{0}" kann mehrere Male in der {1}-Methode verworfen werden. Um zu verhindern, dass eine System.ObjectDisposedException generiert wird, sollten Sie die Dispose-Methode nur einmal für ein Objekt aufrufen.: Lines: 249</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Typen, die löschbare Felder besitzen, müssen gelöscht werden können</Name>
+   <Description>Typen, die löschbare Member deklarieren, müssen auch IDisposable implementieren. Wenn der Typ keine nicht verwalteten Ressourcen besitzt, implementieren Sie dafür keinen Finalizer.</Description>
+   <Resolution Name="DependsOnFix">Implementieren Sie IDisposable für "{0}", weil Member der folgenden IDisposable-Typen instanziiert werden: {1}. Wenn "{0}" bereits veröffentlicht wurde, wird das Hinzufügen von neuen Membern, die IDisposable für diesen Typ implementieren, für vorhandene Benutzer als fehlerhafte Änderung angesehen, die die Lauffähigkeit der Anwendung beeinträchtigt.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategorie</String>
+  <String Key="Certainty">Sicherheit</String>
+  <String Key="CollapseAll">Alle zuklappen</String>
+  <String Key="CheckId">Prüf-ID</String>
+  <String Key="Error">Fehler</String>
+  <String Key="Errors">Fehler</String>
+  <String Key="ExpandAll">Alle aufklappen</String>
+  <String Key="Help">Hilfe</String>
+  <String Key="Line">Zeile</String>
+  <String Key="Messages">Meldung(en)</String>
+  <String Key="LocationNotStoredInPdb">[Nicht in PDB gespeicherter Speicherort]</String>
+  <String Key="Project">Projekt</String>
+  <String Key="Resolution">Auflösung</String>
+  <String Key="Rule">Regel</String>
+  <String Key="RuleFile">Regeldatei</String>
+  <String Key="RuleDescription">Regelbeschreibung</String>
+  <String Key="Source">Quelle</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Ziel</String>
+  <String Key="Warning">Warnung</String>
+  <String Key="Warnings">Warnung(en)</String>
+  <String Key="ReportTitle">Codeanalysebericht</String>
+ </Localized>
+</FxCopReport>
